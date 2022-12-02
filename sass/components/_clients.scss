@@ -1,6 +1,16 @@
 .clients__title {
-@extend %title
+@extend %mob-title;
+
+    @media screen and (min-width: 1200px) {
+
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+    }
+
 }
+
 
 
 
@@ -21,10 +31,11 @@
   @media screen and (min-width: 480px) {
 width: 210px;
     } 
-    
+
 @media screen and (min-width: 768px){
     width: 226px;
 }
+
 @media screen and (min-width: 1200px) {
     width: 170px;
 }

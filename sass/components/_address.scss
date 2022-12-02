@@ -11,6 +11,11 @@
 }
 
 .address__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 12px;
 }
 
+@media screen and (min-width: 1200px) {
+    .address__item:not(:last-child) {
+            margin-bottom: 8px;
+        }
+}

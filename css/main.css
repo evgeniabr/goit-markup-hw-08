@@ -23,15 +23,15 @@
   margin: -1px;
 }
 
-.team__title {
+.clients__title, .team__title {
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
 }
 
-.clients__title, .work__title {
+.work__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
@@ -326,8 +326,8 @@ p {
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/hero-l-2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-l-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-l-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-l-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -597,6 +597,7 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  background-color: #ffffff;
   fill: #afb1b8;
   -webkit-transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
   transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
@@ -604,6 +605,15 @@ p {
 .social-networcs__link:hover, .social-networcs__link:focus {
   background-color: #2196f3;
   fill: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
 }
 
 .clients__list {
@@ -666,8 +676,10 @@ p {
   background-color: var(--secondary-backgraund-color);
 }
 
-.footer__container {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .footer__container {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
@@ -680,6 +692,11 @@ p {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer__box {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__box {
     margin-right: 70px;
@@ -709,9 +726,6 @@ p {
   background-color: #2196f3;
 }
 
-.footer__social-links {
-  margin-bottom: 60px;
-}
 @media screen and (min-width: 1200px) {
   .footer__social-links {
     margin-right: 93px;
@@ -720,9 +734,13 @@ p {
 
 .footer__address {
   margin-top: 28px;
-  margin-bottom: 60px;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-content {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-content {
     display: -webkit-box;
@@ -748,9 +766,14 @@ p {
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 
+@media screen and (min-width: 1200px) {
+  .address__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
 .sign-up {
   -ms-flex-pack: distribute;
       justify-content: space-around;
