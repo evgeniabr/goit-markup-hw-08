@@ -1,0 +1,48 @@
+.work {
+    @media screen and (max-width: 1199px){
+        display: none;
+    }
+   
+}
+
+.work__list {
+     
+    display: flex;
+}
+
+
+
+.work__item {
+    width: calc((100% - 60px) / 3);
+    
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+
+.work__title {
+@extend %title
+}
+
+
+.work__text {
+    padding: 27px 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--light-text-color);
+    text-align: center;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work__thumb {
+    position: relative;
+}
+
+.work__overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}

@@ -1,0 +1,13 @@
+.header {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ececec;
+}
+
+ .header__container {
+    
+    @media screen and (min-width: 767px) {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }}

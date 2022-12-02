@@ -1,0 +1,29 @@
+.social-networcs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.social-networcs__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #afb1b8;
+
+    transition: background-color 250ms var(--timing-function),
+        fill 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: #2196f3;
+        fill: #ffffff;
+    }
+
+    
+}
+
