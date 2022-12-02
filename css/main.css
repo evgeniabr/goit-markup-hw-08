@@ -625,13 +625,17 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
   -webkit-transition: border 250ms var(--timing-function), fill 250ms var(--timing-function);
   transition: border 250ms var(--timing-function), fill 250ms var(--timing-function);
+}
+@media screen and (min-width: 480px) {
+  .clients__link {
+    width: 210px;
+  }
 }
 @media screen and (min-width: 768px) {
   .clients__link {
@@ -762,7 +766,6 @@ p {
 
 .sign-up__email {
   position: relative;
-  width: 450px;
   margin-bottom: 20px;
   height: 50px;
   padding-left: 16px;
@@ -775,6 +778,11 @@ p {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .sign-up__email {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .sign-up__email {
@@ -965,16 +973,16 @@ p {
 .project__thumb {
   position: relative;
   overflow: hidden;
-  width: 450px;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .project__thumb {
-    width: 354px;
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .project__thumb {
-    width: 370px;
+    max-width: 370px;
   }
 }
 
